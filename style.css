@@ -1,0 +1,258 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(97, 32, 122, 0.9);
+    padding: 20px 40px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.btn:hover{
+    background-color: #050505;
+}
+
+.btn_login{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+header nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn_login{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.logo{
+    height: 80px;
+    gap: 30px;
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links li{
+    list-style: none;
+}
+
+body{
+    text-align: center;
+    background-image: radial-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    ), url(imagens/nubank_fundo.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateX(50px); /* mais natural que girar */
+    transition: all 0.8s ease;
+}
+
+.scroll-animation.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 80vh;
+    color: #fff;
+    padding: 0 50px;
+}
+
+.cpf_form{
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cpf_form h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cpf_form input{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.cpf_form button{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #8A05BE;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cpf_form button:hover{
+    background-color: #9c27b0;
+}
+
+.nu_text{
+    color: white;
+    padding: 230px 40px;
+    max-width: 500px;
+}
+
+.hero_text{
+    max-width: 50%;
+    text-align: left;
+}
+
+#nuempresas {
+    display: flex;
+    justify-content: space-between; /* texto à esquerda, imagem à direita */
+    padding: 80px 50px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nu_text{
+    line-height: 1.7rem;
+    padding: 50px 30px;
+    width: auto;
+    max-width: 40%;
+    align-self: flex-start;
+    margin-top: 130px;
+}
+
+.nu_text button{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8A05BE;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nu_text button:hover{
+    background-color: #9c27b0;
+}
+
+
+.hero_text h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero_text p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero_text button{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #8A05BE;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero_text button:hover {
+    background-color: #f1f1f1;
+}
+
+.hero_image {
+    max-width: 320px; /* controla tamanho do cartão */
+    width: 100%;
+    box-shadow: 0 10px 25px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.btn_whatsapp{
+    max-width: 200px;
+    width: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 80px;
+}
+
+@media (max-width: 768px) {
+    .nu_text {
+        max-width: 90%;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
